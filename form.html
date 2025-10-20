@@ -6,15 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="text-align: center;">
+    <img src="Logo.png" height="80" width="200" align="left">
+    <h1 align="center"> Student Registration Form</h1><br>
+    <hr >
     <form>
-        Name: <input type="text" name="name" placeholder="Name"><br>
-        Email: <input type="email" name="email" placeholder="Email"><br>
-        Passw: <input type="password" name="password" placeholder="Pass"><br>
-        Ooldd: <input type="number" name="Age"><br>
-        Gender: <input type="radio" name="Male"> <input type="radio" name="female"> <br>
+        <p>
+            <label>Full Name:</label> <input type="text" name="name" placeholder="Enter your Full Name"><br></p>
+        
+        <p><label>Email:</label> <input type="email" name="email" placeholder="Enter your Full Email"><br>
+        </p>
+        <p><label>Password:</label> <input type="password" name="password" placeholder="Enter Password"><br>
+        </p>
+       <p>
+        <label> Gender: </label>
+        <input type="radio" name="gender" required>Male <input type="radio" name="gender"> Female
+        <p>
+            <label>Course:</label>
+            <select name="course" required>
+                <option>--Select Course--</option>
+            <option value="btech">BTech</option>
+            <option value="bca">BCA</option>
+            <option value="mca">MCA</option>
+            <option value="mba">MBA</option>
+            </select>
+        </p>
+        <p>
+            <label>Contact No:</label>
+            <input type="tel" name="contact" placeholder="Enter your Number" required>
+
+        </p>
+        <p><label>Address:</label><br>
+        <textarea type="address" rows="4" cols="40" placeholder=" Enter your Address"> </textarea></p>
         <input type="button" value="Submit" onclick="alert('Form submitted!')"> 
+        <input type="reset" value="Reset">
         </form>
-        </div>
+        <hr>
+        <p align="center">&copy; 2025 Student Registration Portal</p>        
 </body>
 </html>
